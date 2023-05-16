@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An entertainment video streaming app.">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="bg-[#10141E]">
+
+    <section id="header" class="w-fit">
+      <div class="fixed z-20 lg:hidden h-14 w-screen md:ml-6 md:w-[94%] md:top-[23px] bg-[#161D2F] px-4 md:px-4 md:rounded-md">
+          <div class="flex justify-between items-center pt-3">
+            <img src="assets\logo.svg" alt="" class="h-5">
+            <div class="flex space-x-5 lg:flex-col lg:space-x-0 lg:space-y-5">
+              <svg width="20" height="20" class="fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M8 0H1C.4 0 0 .4 0 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11H1c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1ZM19 0h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1Z"/></svg>
+              <svg width="20" height="20" class="fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M16.956 0H3.044A3.044 3.044 0 0 0 0 3.044v13.912A3.044 3.044 0 0 0 3.044 20h13.912A3.044 3.044 0 0 0 20 16.956V3.044A3.044 3.044 0 0 0 16.956 0ZM4 9H2V7h2v2Zm-2 2h2v2H2v-2Zm16-2h-2V7h2v2Zm-2 2h2v2h-2v-2Zm2-8.26V4h-2V2h1.26a.74.74 0 0 1 .74.74ZM2.74 2H4v2H2V2.74A.74.74 0 0 1 2.74 2ZM2 17.26V16h2v2H2.74a.74.74 0 0 1-.74-.74Zm16 0a.74.74 0 0 1-.74.74H16v-2h2v1.26Z"/></svg>
+              <svg width="20" height="20" class="fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M20 4.481H9.08l2.7-3.278L10.22 0 7 3.909 3.78.029 2.22 1.203l2.7 3.278H0V20h20V4.481Zm-8 13.58H2V6.42h10v11.64Zm5-3.88h-2v-1.94h2v1.94Zm0-3.88h-2V8.36h2v1.94Z"/></svg>
+              <img src="assets\icon-bookmark-full.svg" alt="">
+              
+            </div>
+            <img src="assets\image-avatar.png" alt="" class="h-8 border rounded-full border-white">
+          </div>
+      </div>
+<div id="left" class="">
+      <div class="hidden lg:inline-block fixed top-8 w-24 h-[93vh] py-4 ml-8 bg-[#161D2F] md:rounded-2xl">
+        <div class="h-full flex flex-col justify-between items-center">
+          <div>
+          <img src="assets\logo.svg" alt="" class="h-5">
+          <div class="mt-16 flex flex-col space-y-5">
+            <svg width="20" height="20" class="mx-auto fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M8 0H1C.4 0 0 .4 0 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11H1c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1ZM19 0h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1Z"/></svg>
+            <svg width="20" height="20" class="mx-auto fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M16.956 0H3.044A3.044 3.044 0 0 0 0 3.044v13.912A3.044 3.044 0 0 0 3.044 20h13.912A3.044 3.044 0 0 0 20 16.956V3.044A3.044 3.044 0 0 0 16.956 0ZM4 9H2V7h2v2Zm-2 2h2v2H2v-2Zm16-2h-2V7h2v2Zm-2 2h2v2h-2v-2Zm2-8.26V4h-2V2h1.26a.74.74 0 0 1 .74.74ZM2.74 2H4v2H2V2.74A.74.74 0 0 1 2.74 2ZM2 17.26V16h2v2H2.74a.74.74 0 0 1-.74-.74Zm16 0a.74.74 0 0 1-.74.74H16v-2h2v1.26Z"/></svg>
+            <svg width="20" height="20" class="mx-auto fill-[#5A698F] hover:fill-white active:fill-white hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M20 4.481H9.08l2.7-3.278L10.22 0 7 3.909 3.78.029 2.22 1.203l2.7 3.278H0V20h20V4.481Zm-8 13.58H2V6.42h10v11.64Zm5-3.88h-2v-1.94h2v1.94Zm0-3.88h-2V8.36h2v1.94Z"/></svg>
+            <img src="assets\icon-bookmark-full.svg" alt="">
+          </div>
+          </div>
+          <img src="assets\image-avatar.png" alt="" class="h-8 border rounded-full border-white">
+        </div>
+      </div>
+</div>
+    </section>
+
+    <!-- MAIN PART -->
+    <div id="main" class="z-10 pb-1 absolute top-20 md:top-32 lg:top-8 lg:left-40 w-[95vw] lg:w-[85vw] lg:h-fit overflow-scroll no-scrollbar">
+      <!-- <div class="absolute top-20 md:top-28 lg:top-16 z-10 pb-1"> -->
+
+      <!-- SEARCH BAR -->
+    <div class="w-fit ml-6 lg:ml-0 flex space-x-4">
+      <!-- < class="flex space-x-4 ml-4 md:ml-6 lg:ml-40"> -->
+      <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><path d="M27.613 25.72 23.08 21.2a10.56 10.56 0 0 0 2.253-6.533C25.333 8.776 20.558 4 14.667 4S4 8.776 4 14.667c0 5.89 4.776 10.666 10.667 10.666A10.56 10.56 0 0 0 21.2 23.08l4.52 4.533a1.333 1.333 0 0 0 1.893 0 1.333 1.333 0 0 0 0-1.893ZM6.667 14.667a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" fill="#FFF"/></svg>
+      <input id="searchBar" class="bg-inherit w-56 lg:w-80 text-base font-light opacity-50 text-white focus:opacity-100 outline-none" type="text" placeholder="Search for movies or TV series" onkeyup="myFunction()">
+    </div>
+
+    <!-- TRENDING -->
+    <div id="trending" class="ml-6 mt-6 md:mt-8 lg:ml-0">
+      <h1 class="">Trending</h1>
+
+      <div class=" w-full mt-4 flex space-x-4 overflow-x-auto no-scrollbar">
+
+        <div class="relative">
+          <img src="assets\thumbnails\beyond-earth\trending\small.jpg" width="240" height="140" alt="" class="lg:hidden trendingSnap max-h-max max-w-max">
+          <img src="assets\thumbnails\beyond-earth\trending\large.jpg" width="470" height="230" alt="" class="hidden lg:block trendingSnap max-h-max max-w-max">
+          <div class="svgParent absolute right-1 top-1 lg:right-6 lg:top-4 w-8 h-8 rounded-full bg-[#10141E] hover:bg-white hover:cursor-pointer opacity-50">
+           <svg href="#" width="12" height="14" class="centerDiv stroke-white hover:stroke-black fill-transparent focus:fill-white" xmlns="http://www.w3.org/2000/svg"><path d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z" stroke-width="1.5"/></svg>
+          </div>
+          <div class="flex space-x-2 absolute bottom-10 left-4">
+          <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">PG</h3>
+          </div>
+          <h2 id="try" class="absolute bottom-4 left-4 title">Beyond Earth</h2>
+        </div>
+
+        <div class="relative">
+          <img src="assets\thumbnails\bottom-gear\trending\small.jpg" width="240" height="140" alt="" class="trendingSnap lg:hidden  max-h-max max-w-max">
+          <img src="assets\thumbnails\bottom-gear\trending\large.jpg" width="470" height="230" alt="" class="hidden lg:block trendingSnap max-h-max max-w-max">
+          <div class="absolute right-1 lg:right-6 top-1 lg:top-4 w-8 h-8 rounded-full bg-[#10141E] opacity-50">
+            <svg width="12" height="14" class="centerDiv" xmlns="http://www.w3.org/2000/svg"><path d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z" stroke="#FFF" stroke-width="1.5" fill="none"/></svg>
+           </div>
+          <div class="flex space-x-2 absolute bottom-10 left-4">
+          <h3 class="">2021</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">PG</h3>
+          </div>
+          <h2 class="absolute bottom-4 left-4 title">Bottom Gear</h2>
+        </div>
+
+        <div class="relative">
+          <img src="assets\thumbnails\bottom-gear\trending\small.jpg" width="240" height="140" alt="" class="trendingSnap lg:hidden max-h-max max-w-max">
+          <img src="assets\thumbnails\bottom-gear\trending\large.jpg" width="470" height="230"alt="" class="hidden lg:block trendingSnap max-h-max max-w-max">
+          <div class="absolute right-1 lg:right-6 top-1 lg:top-4 w-8 h-8 rounded-full bg-[#10141E] opacity-50">
+            <svg width="12" height="14" class="centerDiv" xmlns="http://www.w3.org/2000/svg"><path d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z" stroke="#FFF" stroke-width="1.5" fill="none"/></svg>
+           </div>
+          <div class="flex space-x-2 absolute bottom-10 left-4">
+          <h3 class="">2021</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">PG</h3>
+          </div>
+          <h2 class="absolute bottom-4 left-4 title">Bottom Gear</h2>
+        </div>
+
+        <div class="relative">
+          <img src="assets\thumbnails\bottom-gear\trending\small.jpg" width="240" height="140" alt="" class="trendingSnap lg:hidden max-h-max max-w-max">
+          <img src="assets\thumbnails\bottom-gear\trending\large.jpg" width="470" height="230" alt="" class="hidden lg:block trendingSnap max-h-max max-w-max">
+          <div class="absolute right-1 lg:right-6 top-1 lg:top-4 w-8 h-8 rounded-full bg-[#10141E] opacity-50">
+            <svg width="12" height="14" class="centerDiv" xmlns="http://www.w3.org/2000/svg"><path d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z" stroke="#FFF" stroke-width="1.5" fill="none"/></svg>
+           </div>
+          <div class="flex space-x-2 absolute bottom-10 left-4">
+          <h3 class="">2021</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">PG</h3>
+          </div>
+          <h2 class="absolute bottom-4 left-4 title">Bottom Gear</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RECOMMENDED FOR YOU -->
+    <section id="recommended" class="mt-6 md:mt-10">
+
+    <h1 class="ml-6 md:ml-6 lg:ml-0">Recommended For You</h1>
+    
+    <div class="w-fit max-w-max ml-6 md:ml-6 lg:ml-0 lg:mr-4 mt-6 grid gap-x-1 gap-y-4 sm:gap-x-4 md:gap-x-7 md:gap-y-7 lg:gap-x-7 lg:gap-y-8 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+      
+      <div class="w-fit">
+        <img src="assets\thumbnails\the-great-lands\regular\small.jpg" alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\the-great-lands\regular\large.jpg" alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">The Great Lands</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\the-diary\regular\small.jpg" alt=""  width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\the-diary\regular\large.jpg" alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">TV Series</h3><h3 class="">·</h3><h3 class="">PG</h3>
+          </div>
+          <h2 class="mt-1 title">The Diary</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\earths-untouched\regular\small.jpg" alt=""  width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+      <img src="assets\thumbnails\earths-untouched\regular\large.jpg" alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2017</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">18+</h3>
+          </div>
+          <h2 class="mt-1 title">Earth's Untouched</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy" alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy" alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+      <div class="w-fit">
+        <img src="assets\thumbnails\no-land-beyond\regular\small.jpg" loading="lazy"  alt="" width="164" height="110" class="max-w-max max-h-max md:w-56 lg:hidden rounded-lg">
+        <img src="assets\thumbnails\no-land-beyond\regular\large.jpg" loading="lazy"  alt="" class="hidden lg:block object-cover rounded-lg">
+        <div class="mt-2">
+          <div class="flex space-x-2">
+            <h3 class="">2019</h3><h3 class="">·</h3><h3 class="">Movie</h3><h3 class="">·</h3><h3 class="">E</h3>
+          </div>
+          <h2 class="mt-1 title">No Land Beyond</h2>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <!-- SEARCH RESULTS -->
+    <section id="searchResult" class="mt-6 md:mt-10 hidden">
+
+      <h1 class="ml-6 md:ml-6 lg:ml-0 searchResult"></h1>
+    </section>
+
+    </div>
+    <!-- <footer class="absolute bottom-2 left-[30%] lg:left-[50%] text-center italic text-xs opacity-30">Project By Ariff Sulaiman 2023</footer> -->
+  
+    <script src="index.js"></script>
+  </body>
+</html>
